@@ -7,7 +7,14 @@ import static spark.Spark.*;
 
 public class App {
   public static void main(String[] args) {
-    System.out.println(isVowel("Believe you can and you're halfway there. Theodore Roosevelt."));
+    staticFileLocation("/public");
+    String layout = "templates/layout.vtl";
+
+    get ("/", (request, response) -> {
+    HashMap model = new HashMap();
+    model.put("template", "templates/wordPuzzler.vtl");
+    return new ModelAndView(model, layout);
+    }, new VelocityTemplateEngine());
   }
 
   public static String isVowel(String userWords) {
