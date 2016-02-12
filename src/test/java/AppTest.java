@@ -23,9 +23,15 @@ public class AppTest extends FluentTest {
   }
 
   @Test
-  public void isVowel_replacesVowelWithDash_dash() {
+  public void isVowel_replacesAllVowelsWithDash_dashWord() {
     App testApp = new App();
-    assertEquals("-", testApp.isVowel("u"));
+    assertEquals("-l-", testApp.isVowel("ele"));
+  }
+
+  @Test
+  public void isVowel_replacesAllCaseVowelsWithDash_dashWord() {
+    App testApp = new App();
+    assertEquals("b---T-f-l", testApp.isVowel("bEauTifUl"));
   }
 
 }
