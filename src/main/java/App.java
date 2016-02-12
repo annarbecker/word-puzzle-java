@@ -20,12 +20,26 @@ public class App {
     HashMap model = new HashMap();
     model.put("template", "templates/puzzle.vtl");
 
-    String userWords = request.queryParams("userWords");
+    App.userWords = request.queryParams("userWords");
     String wordPuzzle = wordPuzzler(userWords);
+
     model.put("wordPuzzle", wordPuzzle);
     return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
+
+    get ("/guess", (request, response) -> {
+    HashMap model = new HashMap();
+    model.put("template", "templates/guess.vtl");
+
+    String userGuess = request.queryParams("userGuess");
+
+    model.put("userGuess", userGuess);
+    model.put("userWords", userWords);
+    return new ModelAndView(model, layout);
+    }, new VelocityTemplateEngine());
   }
+
+  public static String userWords = "";
 
   public static String wordPuzzler(String userWords) {
     String[] vowels = {"a", "A", "e", "E", "i", "I", "o", "O", "u", "U"};
