@@ -1,0 +1,12 @@
+<h3>Results</h3>
+<hr>
+#if ($userGuess.equals($userWords))
+<p class="puzzleText">You guessed it!</p>
+<hr>
+#else
+<p class="puzzleText" >Better luck next time!</p>
+<p><strong>You guessed:</strong> $userGuess</p>
+<p><strong>The correct word or phrase was:</strong> $userWords</p>
+<hr>
+#end
+<a href="/" type="button" class="btn">Create a new word puzzle</a>
