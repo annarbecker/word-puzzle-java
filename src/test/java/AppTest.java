@@ -23,9 +23,9 @@ public class AppTest extends FluentTest {
   }
 
   @Test
-  public void method_expectedBehavior_output() {
+  public void isVowel_replacesVowelWithDash_dash() {
     App testApp = new App();
-    assertEquals("output", testApp.getChange("input"));
+    assertEquals("-", testApp.isVowel("u"));
   }
 
 }
