@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AppTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-02-12T16:18:29" hostname="Annas-MacBook-Air.local" time="0.334">
+<testsuite name="AppTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-02-12T16:42:25" hostname="Annas-MacBook-Air.local" time="0.395">
   <properties/>
-  <testcase name="isVowel_replacesAllVowelsWithDashInTwoWords_dashWord" classname="AppTest" time="0.005"/>
-  <testcase name="rootTest" classname="AppTest" time="0.29"/>
-  <testcase name="isVowel_replacesAllVowelsWithDash_dashWord" classname="AppTest" time="0.001"/>
-  <testcase name="isVowel_replacesAllCaseVowelsWithDash_dashWord" classname="AppTest" time="0.002"/>
-  <system-out><![CDATA[b---T-f-l s-ng
+  <testcase name="isVowel_replacesAllVowelsWithDashInTwoWords_dashWords" classname="AppTest" time="0.006"/>
+  <testcase name="rootTest" classname="AppTest" time="0.35"/>
+  <testcase name="isVowel_replacesAllVowelsWithDash_dashWord" classname="AppTest" time="0.002"/>
+  <testcase name="isVowel_replacesAllCaseVowelsWithDash_dashWord" classname="AppTest" time="0.001"/>
+  <system-out><![CDATA[t-st m-r- th-ngs h-r- -b-c-w3-ld*!?-s3w-r----------
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
