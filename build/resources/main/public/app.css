@@ -35,6 +35,11 @@ body {
   font-size: 35px;
 }
 
+#noPuzzle {
+  color: red;
+  font-style: italic;
+}
+
 .btn {
   color: white;
   background-color: #ABA46A;
