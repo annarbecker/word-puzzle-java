@@ -1,7 +1,11 @@
 <h3>Solve this word puzzle!</h3>
 <hr>
+#if ($wordPuzzle.equalsIgnoreCase(""))
+<p><em>No word or pharse was submitted, please create a new puzzle with content.<em></p>
+#else
 <p class="puzzleText">$wordPuzzle</p>
 <hr>
+#end
 <form  action="/guess" method="get">
   <div class="form-group">
     <label for="userGuess">Guess the word or phrase</label>
