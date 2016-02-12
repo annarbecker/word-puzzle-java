@@ -23,6 +23,14 @@ public class AppTest extends FluentTest {
   }
 
   @Test
+  public void isVowelPage() {
+      goTo("http://localhost:4567/");
+      fill("#userInput").with("test");
+      submit(".btn");
+      assertThat(pageSource()).contains("Solve");
+  }
+
+  @Test
   public void isVowel_replacesAllVowelsWithDash_dashWord() {
     App testApp = new App();
     assertEquals("-l-", testApp.isVowel("ele"));

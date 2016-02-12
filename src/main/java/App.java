@@ -15,6 +15,16 @@ public class App {
     model.put("template", "templates/wordPuzzler.vtl");
     return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
+
+    get ("/puzzle", (request, response) -> {
+    HashMap model = new HashMap();
+    model.put("template", "templates/puzzle.vtl");
+
+    String userWords = request.queryParams("userWords");
+    String wordPuzzle = isVowel(userWords);
+    model.put("wordPuzzle", wordPuzzle);
+    return new ModelAndView(model, layout);
+    }, new VelocityTemplateEngine());
   }
 
   public static String isVowel(String userWords) {
