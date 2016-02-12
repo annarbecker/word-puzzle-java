@@ -7,14 +7,14 @@ import static spark.Spark.*;
 
 public class App {
   public static void main(String[] args) {
-    System.out.println(isVowel("test more things here abecaw3eld*!?as3weraeiouAEIOU"));
+    System.out.println(isVowel("Believe you can and you're halfway there. Theodore Roosevelt."));
   }
 
-  public static String isVowel(String word) {
+  public static String isVowel(String userWords) {
     String[] vowels = {"a", "A", "e", "E", "i", "I", "o", "O", "u", "U"};
     for (String vowel : vowels) {
-        word = word.replaceAll(vowel, "-");
+        userWords = userWords.replaceAll(vowel, "-");
     }
-      return word;
+      return userWords;
   }
 }
