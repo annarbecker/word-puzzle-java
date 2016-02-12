@@ -49,3 +49,13 @@ body {
   color: white;
   background-color: #514E5F;
 }
+
+#guessButton {
+  color: white;
+  background-color: #514E5F
+}
+
+#guessButton:hover {
+  color: white;
+  background-color: #ABA46A;
+}
