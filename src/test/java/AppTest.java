@@ -34,4 +34,10 @@ public class AppTest extends FluentTest {
     assertEquals("b---T-f-l", testApp.isVowel("bEauTifUl"));
   }
 
+  @Test
+  public void isVowel_replacesAllVowelsWithDashInTwoWords_dashWord() {
+    App testApp = new App();
+    assertEquals("b---T-f-l s-ng", testApp.isVowel("bEauTifUl song"));
+  }
+
 }
