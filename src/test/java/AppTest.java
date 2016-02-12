@@ -23,11 +23,14 @@ public class AppTest extends FluentTest {
   }
 
   @Test
-  public void wordPuzzler() {
+  public void wordPuzzlerPage() {
       goTo("http://localhost:4567/");
       fill("#userInput").with("test");
       submit(".btn");
       assertThat(pageSource()).contains("Solve");
+      fill("#userGuess").with("test");
+      submit(".guessButton");
+      assertThat(pageSource()).contains("Results");
   }
 
   @Test
