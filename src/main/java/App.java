@@ -21,13 +21,13 @@ public class App {
     model.put("template", "templates/puzzle.vtl");
 
     String userWords = request.queryParams("userWords");
-    String wordPuzzle = isVowel(userWords);
+    String wordPuzzle = wordPuzzler(userWords);
     model.put("wordPuzzle", wordPuzzle);
     return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
   }
 
-  public static String isVowel(String userWords) {
+  public static String wordPuzzler(String userWords) {
     String[] vowels = {"a", "A", "e", "E", "i", "I", "o", "O", "u", "U"};
     for (String vowel : vowels) {
         userWords = userWords.replaceAll(vowel, "-");

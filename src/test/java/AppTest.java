@@ -23,7 +23,7 @@ public class AppTest extends FluentTest {
   }
 
   @Test
-  public void isVowelPage() {
+  public void wordPuzzler() {
       goTo("http://localhost:4567/");
       fill("#userInput").with("test");
       submit(".btn");
@@ -31,21 +31,21 @@ public class AppTest extends FluentTest {
   }
 
   @Test
-  public void isVowel_replacesAllVowelsWithDash_dashWord() {
+  public void wordPuzzler_replacesAllVowelsWithDash_dashWord() {
     App testApp = new App();
-    assertEquals("-l-", testApp.isVowel("ele"));
+    assertEquals("-l-", testApp.wordPuzzler("ele"));
   }
 
   @Test
-  public void isVowel_replacesAllCaseVowelsWithDash_dashWord() {
+  public void wordPuzzler_replacesAllCaseVowelsWithDash_dashWord() {
     App testApp = new App();
-    assertEquals("b---T-f-l", testApp.isVowel("bEauTifUl"));
+    assertEquals("b---T-f-l", testApp.wordPuzzler("bEauTifUl"));
   }
 
   @Test
-  public void isVowel_replacesAllVowelsWithDashInTwoWords_dashWords() {
+  public void wordPuzzler_replacesAllVowelsWithDashInTwoWords_dashWords() {
     App testApp = new App();
-    assertEquals("b---T-f-l s-ng", testApp.isVowel("bEauTifUl song"));
+    assertEquals("b---T-f-l s-ng", testApp.wordPuzzler("bEauTifUl song"));
   }
 
 }
