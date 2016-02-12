@@ -1,5 +1,14 @@
 <h3>Solve this word puzzle!</h3>
 <hr>
-<p id="puzzleText">$wordPuzzle</p>
+<p class="puzzleText">$wordPuzzle</p>
+<hr>
+<form  action="/guess" method="get">
+  <div class="form-group">
+    <label for="userGuess">Guess the word or phrase</label>
+    <br>
+    <input class="form-control" type="text" name="userGuess" id="userGuess">
+  </div>
+  <button type="submit" class="btn" name="button" id="guess">Solve it!</button>
+</form>
 <hr>
 <a href="/" type="button" class="btn">Create a new word puzzle</a>
