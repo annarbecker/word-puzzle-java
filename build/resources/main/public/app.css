@@ -1,9 +1,14 @@
 .jumbotron {
   padding: 0px;
   background-color: white;
+  padding: 0px;
+}
+
+#headerText {
   text-align: center;
   font-weight: lighter;
-  padding: 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
 }
 
 .jumbotron h1 {
@@ -18,11 +23,12 @@
   padding: 30px;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  width: 75%;
 }
 
-.container p {
+#puzzleText {
   font-family: 'Open Sans', sans-serif;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 body {
