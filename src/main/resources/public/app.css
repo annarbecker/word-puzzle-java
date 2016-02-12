@@ -8,12 +8,12 @@
 .jumbotron h1 {
   font-family: 'Fredericka the Great', cursive;
   font-size: 75px;
-  color: #223F40;
+  color: #ABA46A;
   text-align: center;
 }
 
 .container {
-  background-color: #F0F0F0;
+  background-color: white;
   border-radius: 10px;
   padding: 30px;
   font-family: 'Open Sans', sans-serif;
@@ -32,14 +32,15 @@
 }
 
 body {
-  background-image: url("../images/gplaypattern.png");
+  background-image: url("../images/stardust.png");
 }
 
-button {
+.btn {
   color: white;
-  background-color: #223F40;
+  background-color: #ABA46A;
 }
 
-button:hover {
-  background-color: #59A6A8;
+.btn:hover {
+  color: white;
+  background-color: #514E5F;
 }
