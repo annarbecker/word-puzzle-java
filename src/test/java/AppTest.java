@@ -29,7 +29,7 @@ public class AppTest extends FluentTest {
       submit(".btn");
       assertThat(pageSource()).contains("Solve");
       fill("#userGuess").with("test");
-      submit(".guessButton");
+      submit("#guessButton");
       assertThat(pageSource()).contains("Results");
   }
 
