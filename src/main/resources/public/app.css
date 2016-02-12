@@ -36,8 +36,8 @@ body {
 }
 
 #noPuzzle {
-  color: red;
-  font-style: italic;
+  color: #E75D4E;
+  font-size: 19.5px;
 }
 
 .btn {
