@@ -47,5 +47,4 @@ public class AppTest extends FluentTest {
     App testApp = new App();
     assertEquals("b---T-f-l s-ng", testApp.wordPuzzler("bEauTifUl song"));
   }
-
 }
