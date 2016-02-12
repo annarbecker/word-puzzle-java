@@ -23,7 +23,7 @@ A website that uses a method to replace vowels in a string with the dash symbol 
 
 ## Technologies Used
 
-Java, Spark, Junit, Velocity, Fluentlenium, Bootstrap
+Java, Spark, Junit, Velocity, Fluentlenium, Bootstrap, HTML, CSS
 
 ### License
 
