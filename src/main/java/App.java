@@ -19,10 +19,8 @@ public class App {
     get ("/puzzle", (request, response) -> {
     HashMap model = new HashMap();
     model.put("template", "templates/puzzle.vtl");
-
     App.userWords = request.queryParams("userWords");
     String wordPuzzle = wordPuzzler(userWords);
-
     model.put("wordPuzzle", wordPuzzle);
     return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
@@ -30,9 +28,7 @@ public class App {
     get ("/guess", (request, response) -> {
     HashMap model = new HashMap();
     model.put("template", "templates/guess.vtl");
-
     String userGuess = request.queryParams("userGuess");
-
     model.put("userGuess", userGuess);
     model.put("userWords", userWords);
     return new ModelAndView(model, layout);
