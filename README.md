@@ -1,10 +1,11 @@
-# Title
+# Word Puzzle
 
-#### Description and Date
+#### Word Puzzle Maker | February 12, 2016
 
-#### Authors
+#### By Anna Becker
 
 ## Description
+A website that uses a method to replace vowels in a string with the dash symbol "-" to create a word puzzle to solve.
 
 ## Setup/Installation Requirements
 
@@ -28,7 +29,7 @@ Java, Spark, Junit, Velocity, Fluentlenium, Bootstrap
 
 This software is licensed under the MIT license.
 
-Copyright (c) 2016
+Copyright (c) 2016 by Anna Becker. 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
