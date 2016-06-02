@@ -7,6 +7,8 @@
 ## Description
 A website that uses a method to replace vowels in a string with the dash symbol "-" to create a word puzzle to solve.
 
+[Create a Word Puzzle!](https://obscure-escarpment-76544.herokuapp.com/)
+
 ## Setup/Installation Requirements
 
 * Clone this repository.
